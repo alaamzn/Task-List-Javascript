@@ -15,7 +15,8 @@ function loadEventListeners(){
 
   //DOM Load event
   document.addEventListener('DOMContentLoaded', getTasks);
-   //Add task event
+   
+  //Add task event
    form.addEventListener('submit', addTask);   
 
    // Remove tsk events 
@@ -106,6 +107,7 @@ function storeTaskInLocalStorage(task){
   if (localStorage.getItem('tasks') === null){
     tasks = [];
   } else {
+    console.log(JSON.parse(localStorage.getItem('tasks')));
     tasks = JSON.parse(localStorage.getItem('tasks'));
   }
   tasks.push(task);

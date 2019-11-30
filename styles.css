@@ -1,0 +1,19 @@
+body{
+      background: #64b2cd;
+}
+
+#main{
+      background: #d2ffff;
+      margin-top: 50px;
+}
+
+.card-title{
+      text-align: center;
+      font-weight: bold;
+}
+
+
+.card-action{
+      background: #d2ffff;
+      padding: 30px;
+}
