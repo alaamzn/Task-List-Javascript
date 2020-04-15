@@ -1,4 +1,3 @@
-
 // Define UI Vars 
 
 const form = document.querySelector('#task-form');
@@ -85,10 +84,13 @@ function addTask(e) {
 
   // Add icon html
   link.innerHTML = '<i class="fa fa-remove"></i>';
-
+  
+  
   // Add the link to li
   li.appendChild(link);
   
+  // Add a background color to the link
+  li.style.backgroundColor = "#d2ffff";
   // Add li to ul
   taskList.appendChild(li);
   
